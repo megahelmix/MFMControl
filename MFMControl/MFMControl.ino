@@ -157,5 +157,9 @@ void parseInBuf()
       mfmHeadSelect = headNum;
     }
   }
+  else if (inbuf[0] == 'i')
+  {
+    mfmInputReg = 0xFF; // force a status report
+  }
   inIdx = 0;
 }
